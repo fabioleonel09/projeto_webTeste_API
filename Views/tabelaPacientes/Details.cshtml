@@ -1,0 +1,58 @@
+﻿@model webTesteAPI.Models.tabelaPaciente
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>tabelaPaciente</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.nomePaciente)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.nomePaciente)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dataNascimento)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dataNascimento)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.examesRealizados)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.examesRealizados)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.dataExameRealizado)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.dataExameRealizado)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.cpf }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
